@@ -39,45 +39,12 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
-                        bindings = <
-   &kp TAB   &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y &kp U         &kp I          &kp O          &kp P           &kp DEL
-   &kp ESC   &hmrl LGUI A &hmrl LALT S &hmrl LCTRL D &hmsl LSHFT F &kp G          &kp H &hmsr RSHFT J &hmrr RCTRL K  &hmrr LALT L   &hmrr RGUI SEMI &kp SQT
-   &kp GRAVE &kp Z        &hmrl RALT X &kp C         &kp V         &kp B          &kp N &kp M         &kp COMMA      &hmrr RALT DOT &kp FSLH        &kp BSLH
-                                               &kp LSHFT &kp SPACE &thumb 1 TAB   &thumb 2 RET &kp BSPC &kp RALT
-                        >;
-                };
-                lower_layer {
-                        bindings = <
-   &trans &trans   &trans   &trans    &trans    &kp CAPS     &kp HOME &kp PG_DN  &kp PG_UP &kp END    &kp C_VOL_UP &kp PSCRN
-   &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &caps_word   &kp LEFT &kp DOWN   &kp UP    &kp RIGHT  &kp C_VOL_DN &kp INS
-   &trans &trans   &kp RALT &trans    &trans    &trans       &trans   &kp C_PREV &kp C_PP  &kp C_NEXT &kp C_MUTE   &trans
-                        &trans     &trans       &trans       &mo 3  &trans   &trans
-                        >;
-                };
-                raise_layer {
-                        bindings = <
-   &trans &kp LBKT  &kp N7 &kp N8 &kp N9 &kp RBKT   &kp STAR &kp PLUS  &kp MINUS &kp FSLH &trans &trans
-   &trans &kp SEMI  &kp N4 &kp N5 &kp N6 &kp EQUAL  &trans   &kp RSHFT &kp RCTRL &kp LALT &kp RGUI &trans
-   &trans &kp MINUS &kp N1 &kp N2 &kp N3 &kp BSLH   &trans   &kp LPAR  &kp RPAR  &kp RALT &trans &trans
-                             &trans &kp N0 &mo 3    &trans  &trans    &trans
-                        >;
-                };
-                function_layer {
-                        bindings = <
-   &trans &kp F12 &kp F7 &kp F8 &kp F9 &trans   &to 4      &none        &none        &none        &none        &none
-   &trans &kp F11 &kp F4 &kp F5 &kp F6 &trans   &trans     &kp RSHFT    &kp RCTRL    &kp LALT     &kp RGUI     &none
-   &trans &kp F10 &kp F1 &kp F2 &kp F3 &trans   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-                        &trans &trans  &trans   &trans   &trans    &trans
-                        >;
-                };
-
                 default_layer_macos {
                         bindings = <
    &kp TAB   &kp Q         &kp W        &kp E        &kp R         &kp T          &kp Y &kp U         &kp I         &kp O          &kp P            &kp DEL
    &kp ESC   &hmrl LCTRL A &hmrl LALT S &hmrl LGUI D &hmsl LSHFT F &kp G          &kp H &hmsr RSHFT J &hmrr RGUI K  &hmrr LALT L   &hmrr RCTRL SEMI &kp SQT
    &kp GRAVE &kp Z         &hmrl RALT X &kp C        &kp V         &kp B          &kp N &kp M         &kp COMMA     &hmrr RALT DOT &kp FSLH         &kp BSLH
-                                               &kp LSHFT &kp SPACE &thumb 5 TAB   &thumb 6 RET &kp BSPC &kp RALT
+                                               &kp LSHFT &kp SPACE &thumb 1 TAB   &thumb 2 RET &kp BSPC &kp RALT
                         >;
                 };
                 lower_layer_macos {
@@ -85,7 +52,7 @@
    &trans &trans    &trans   &trans    &trans    &kp CAPS     &kp HOME &kp PG_DN  &kp PG_UP &kp END    &kp C_VOL_UP &kp PSCRN
    &trans &kp LCTRL &kp LALT &kp LGUI  &kp LSHFT &caps_word   &kp LEFT &kp DOWN   &kp UP    &kp RIGHT  &kp C_VOL_DN &kp INS
    &trans &trans    &kp RALT &trans    &trans    &trans       &trans   &kp C_PREV &kp C_PP  &kp C_NEXT &kp C_MUTE   &trans
-                        &trans     &trans       &trans       &mo 7  &trans   &trans
+                        &trans     &trans       &trans       &mo 3  &trans   &trans
                         >;
                 };
                 raise_layer_macos {
@@ -93,16 +60,50 @@
    &trans &kp LBKT  &kp N7 &kp N8 &kp N9 &kp RBKT   &kp STAR &kp PLUS  &kp MINUS &kp FSLH &trans    &trans
    &trans &kp SEMI  &kp N4 &kp N5 &kp N6 &kp EQUAL  &trans   &kp RSHFT &kp RGUI  &kp LALT &kp RCTRL &trans
    &trans &kp MINUS &kp N1 &kp N2 &kp N3 &kp BSLH   &trans   &kp LPAR  &kp RPAR  &kp RALT &trans    &trans
-                             &trans &kp N0 &mo 7    &trans  &trans    &trans
+                             &trans &kp N0 &mo 3    &trans  &trans    &trans
                         >;
                 };
                 function_layer_macos {
                         bindings = <
-   &trans &kp F12 &kp F7 &kp F8 &kp F9 &trans   &to 1      &none        &none        &none        &none        &none
+   &trans &kp F12 &kp F7 &kp F8 &kp F9 &trans   &to 5      &none        &none        &none        &none        &none
    &trans &kp F11 &kp F4 &kp F5 &kp F6 &trans   &trans     &kp RSHFT    &kp RGUI     &kp LALT     &kp RCTRL    &none
    &trans &kp F10 &kp F1 &kp F2 &kp F3 &trans   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
                         &trans &trans  &trans   &trans   &trans    &trans
                         >;
                 };
+
+                default_layer {
+                        bindings = <
+   &kp TAB   &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y &kp U         &kp I          &kp O          &kp P           &kp DEL
+   &kp ESC   &hmrl LGUI A &hmrl LALT S &hmrl LCTRL D &hmsl LSHFT F &kp G          &kp H &hmsr RSHFT J &hmrr RCTRL K  &hmrr LALT L   &hmrr RGUI SEMI &kp SQT
+   &kp GRAVE &kp Z        &hmrl RALT X &kp C         &kp V         &kp B          &kp N &kp M         &kp COMMA      &hmrr RALT DOT &kp FSLH        &kp BSLH
+                                               &kp LSHFT &kp SPACE &thumb 5 TAB   &thumb 6 RET &kp BSPC &kp RALT
+                        >;
+                };
+                lower_layer {
+                        bindings = <
+   &trans &trans   &trans   &trans    &trans    &kp CAPS     &kp HOME &kp PG_DN  &kp PG_UP &kp END    &kp C_VOL_UP &kp PSCRN
+   &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &caps_word   &kp LEFT &kp DOWN   &kp UP    &kp RIGHT  &kp C_VOL_DN &kp INS
+   &trans &trans   &kp RALT &trans    &trans    &trans       &trans   &kp C_PREV &kp C_PP  &kp C_NEXT &kp C_MUTE   &trans
+                        &trans     &trans       &trans       &mo 7  &trans   &trans
+                        >;
+                };
+                raise_layer {
+                        bindings = <
+   &trans &kp LBKT  &kp N7 &kp N8 &kp N9 &kp RBKT   &kp STAR &kp PLUS  &kp MINUS &kp FSLH &trans &trans
+   &trans &kp SEMI  &kp N4 &kp N5 &kp N6 &kp EQUAL  &trans   &kp RSHFT &kp RCTRL &kp LALT &kp RGUI &trans
+   &trans &kp MINUS &kp N1 &kp N2 &kp N3 &kp BSLH   &trans   &kp LPAR  &kp RPAR  &kp RALT &trans &trans
+                             &trans &kp N0 &mo 7    &trans  &trans    &trans
+                        >;
+                };
+                function_layer {
+                        bindings = <
+   &trans &kp F12 &kp F7 &kp F8 &kp F9 &trans   &to 1      &none        &none        &none        &none        &none
+   &trans &kp F11 &kp F4 &kp F5 &kp F6 &trans   &trans     &kp RSHFT    &kp RCTRL    &kp LALT     &kp RGUI     &none
+   &trans &kp F10 &kp F1 &kp F2 &kp F3 &trans   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+                        &trans &trans  &trans   &trans   &trans    &trans
+                        >;
+                };
+
         };
 };
