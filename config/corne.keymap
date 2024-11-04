@@ -43,8 +43,8 @@
                         bindings = <
    &kp TAB   &kp Q         &kp W        &kp E        &kp R         &kp T          &kp Y &kp U            &kp I         &kp O          &kp P            &kp EQUAL
    &kp ESC   &hmrl LCTRL A &hmrl LALT S &hmrl LGUI D &kp F         &kp G          &kp H &kp J            &hmrr RGUI K  &hmrr LALT L   &hmrr RCTRL SEMI &kp RET
-   &kp LSHFT &kp Z         &kp X        &kp C        &kp V         &kp B          &kp N &kp M            &kp COMMA     &kp DOT        &kp FSLH         &kp RSHFT
-                                               &kp LALT   &kp BSPC  &mo 1          &mo 2 &kp SPACE &kp RALT
+   &kp LALT  &kp Z         &kp X        &kp C        &kp V         &kp B          &kp N &kp M            &kp COMMA     &kp DOT        &kp FSLH         &kp RSHFT
+                                               &kp LSHFT  &kp BSPC  &mo 1          &mo 2 &kp SPACE &kp RALT
                         >;
                 };
                 lower_layer_macos {
@@ -76,8 +76,8 @@
                         bindings = <
    &kp TAB   &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y &kp U            &kp I          &kp O          &kp P           &kp EQUAL
    &kp ESC   &hmrl LGUI A &hmrl LALT S &hmrl LCTRL D &kp F         &kp G          &kp H &kp J            &hmrr RCTRL K  &hmrr LALT L   &hmrr RGUI SEMI &kp RET
-   &kp LSHFT &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N &kp M            &kp COMMA      &kp DOT        &kp FSLH        &kp RSHFT
-                                               &kp LALT   &kp BSPC  &mo 5          &mo 6 &kp SPACE &kp RALT
+   &kp LALT &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N &kp M            &kp COMMA      &kp DOT        &kp FSLH        &kp RSHFT
+                                               &kp LSHFT  &kp BSPC  &mo 5          &mo 6 &kp SPACE &kp RALT
                         >;
                 };
                 lower_layer {
